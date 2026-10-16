@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rutinas — SportLife</title>
+  <meta name="description" content="Rutinas cortas de calistenia, gimnasio, deportes de equipo y vida saludable, con timer incluido.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="SportLife, inicio">Sport<b>/</b>Life</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html" aria-current="page">Rutinas</a>
+        <a href="ejercicios.html">Ejercicios</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="proyecto.html">El proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-head dark">
+      <div class="wrap">
+        <p class="tag">Elegí y empezá</p>
+        <h1>Rutinas</h1>
+        <p>Todas son cortas y tienen timer. Filtrá por categoría y nivel, tocá empezar y listo.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="filters">
+          <div class="fgroup" id="filtros-cat" role="group" aria-label="Filtrar por categoría">
+            <span class="flabel">Categoría</span>
+            <button class="chip" type="button" data-valor="todas" aria-pressed="true">Todas</button>
+            <button class="chip" type="button" data-valor="calistenia" aria-pressed="false">Calistenia</button>
+            <button class="chip" type="button" data-valor="gimnasio" aria-pressed="false">Gimnasio</button>
+            <button class="chip" type="button" data-valor="equipo" aria-pressed="false">Deportes de equipo</button>
+            <button class="chip" type="button" data-valor="vida" aria-pressed="false">Vida saludable</button>
+          </div>
+          <div class="fgroup" id="filtros-nivel" role="group" aria-label="Filtrar por nivel">
+            <span class="flabel">Nivel</span>
+            <button class="chip" type="button" data-valor="todos" aria-pressed="true">Todos</button>
+            <button class="chip" type="button" data-valor="Principiante" aria-pressed="false">Principiante</button>
+            <button class="chip" type="button" data-valor="Intermedio" aria-pressed="false">Intermedio</button>
+          </div>
+        </div>
+
+        <p class="count" id="conteo" role="status" aria-live="polite"></p>
+        <div class="grid" id="lista-rutinas">
+          <noscript><p class="vacio">Necesitás JavaScript para ver las rutinas.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot">
+        <a class="logo" href="index.html">Sport<b>/</b>Life</a>
+        <nav aria-label="Pie de página">
+          <a href="rutinas.html">Rutinas</a>
+          <a href="ejercicios.html">Ejercicios</a>
+          <a href="consejos.html">Consejos</a>
+          <a href="proyecto.html">El proyecto</a>
+        </nav>
+      </div>
+      <p class="legal">SportLife es un proyecto comunicacional (TACO, Etapa 1). El contenido es informativo. Si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

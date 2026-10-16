@@ -1,0 +1,31 @@
+/* SportLife — página de ejercicios (se carga después de styles.css) */
+.ex-tools{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.ex-leyenda{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--mute);font-size:15px;max-width:520px}
+.ex-leyenda i{flex:none;display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--hot)}
+
+.ex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:26px}
+@media(max-width:420px){.ex-grid{grid-template-columns:1fr}}
+.ex-card{border:3px solid var(--ink);background:#fff;display:flex;flex-direction:column}
+.ex-fig{border-bottom:3px solid var(--ink)}
+.ex-fig svg{display:block;width:100%;height:auto;aspect-ratio:8/5;background:var(--paper-2)}
+.ex-tags{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:10px 12px;background:var(--paper);border-top:3px solid var(--ink)}
+.ex-tags-l{font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--mute);margin-right:4px}
+.ex-tag{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;padding:6px 12px;border:3px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer}
+.ex-tag:hover{background:var(--paper-2)}
+.ex-tag.on{background:var(--ink);color:var(--volt)}
+.ex-tag.pin{outline:3px solid var(--hot);outline-offset:2px}
+
+.ex-body{padding:20px 18px 22px;display:flex;flex-direction:column;gap:12px}
+.ex-grupo{font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--mute)}
+.ex-body h3{font-size:38px}
+.ex-musculos{font-weight:500}
+.ex-pasos{counter-reset:n}
+.ex-pasos li{counter-increment:n;position:relative;padding:9px 0 9px 40px;border-bottom:1px solid #cfccc0;font-weight:500;font-size:16px}
+.ex-pasos li::before{content:counter(n);position:absolute;left:0;top:9px;width:26px;height:26px;background:var(--ink);color:var(--volt);font-family:var(--display);font-size:16px;text-align:center;line-height:27px}
+.ex-nota{padding:10px 12px;font-size:15px;border-left:6px solid var(--ink);background:var(--paper)}
+.ex-nota b{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:12px;margin-bottom:2px}
+.ex-error{border-left-color:var(--hot)}
+
+.ex-aviso{margin-top:44px;border:3px solid var(--ink);background:var(--volt);padding:22px 20px}
+.ex-aviso h2{font-size:clamp(30px,5vw,46px);margin-bottom:8px}
+.ex-aviso p{font-weight:500;max-width:720px}

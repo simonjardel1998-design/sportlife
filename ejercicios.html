@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios — SportLife</title>
+  <meta name="description" content="Mirá cómo se hace cada ejercicio: animaciones paso a paso, errores comunes y versiones más fáciles.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ejercicios.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="SportLife, inicio">Sport<b>/</b>Life</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="ejercicios.html" aria-current="page">Ejercicios</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="proyecto.html">El proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-head dark">
+      <div class="wrap">
+        <p class="tag">Así se hace</p>
+        <h1>Ejercicios</h1>
+        <p>Mirá el movimiento antes de probarlo. Cada ejercicio tiene su animación, tres pasos, el error más común y una versión más fácil.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="filters">
+          <div class="fgroup" id="filtros-ej" role="group" aria-label="Filtrar por zona del cuerpo">
+            <span class="flabel">Zona</span>
+            <button class="chip" type="button" data-valor="todos" aria-pressed="true">Todos</button>
+            <button class="chip" type="button" data-valor="pecho" aria-pressed="false">Pecho y brazos</button>
+            <button class="chip" type="button" data-valor="espalda" aria-pressed="false">Espalda</button>
+            <button class="chip" type="button" data-valor="piernas" aria-pressed="false">Piernas y glúteos</button>
+            <button class="chip" type="button" data-valor="core" aria-pressed="false">Core</button>
+            <button class="chip" type="button" data-valor="hombros" aria-pressed="false">Hombros</button>
+          </div>
+        </div>
+
+        <div class="ex-tools">
+          <p class="ex-leyenda"><i aria-hidden="true"></i><span>La zona naranja marca lo que más trabaja. Tocá una posición para frenar la animación ahí.</span></p>
+          <button class="btn" type="button" id="ej-pausa" aria-pressed="false">Pausar animaciones</button>
+        </div>
+
+        <p class="count" id="ej-conteo" role="status" aria-live="polite"></p>
+        <div class="ex-grid" id="lista-ejercicios">
+          <noscript><p class="vacio">Necesitás JavaScript para ver las animaciones.</p></noscript>
+        </div>
+
+        <aside class="ex-aviso">
+          <h2>Antes de empezar</h2>
+          <p>Calentá cinco minutos, tomá agua y andá a tu ritmo. Si sentís dolor punzante en una articulación, frená. Y si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot">
+        <a class="logo" href="index.html">Sport<b>/</b>Life</a>
+        <nav aria-label="Pie de página">
+          <a href="rutinas.html">Rutinas</a>
+          <a href="ejercicios.html">Ejercicios</a>
+          <a href="consejos.html">Consejos</a>
+          <a href="proyecto.html">El proyecto</a>
+        </nav>
+      </div>
+      <p class="legal">SportLife es un proyecto comunicacional (TACO, Etapa 1). El contenido es informativo. Si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="ejercicios.js"></script>
+</body>
+</html>

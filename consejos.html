@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consejos — SportLife</title>
+  <meta name="description" content="Consejos claros sobre entrenamiento, alimentación, descanso y mentalidad para jóvenes que quieren moverse más.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="SportLife, inicio">Sport<b>/</b>Life</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="ejercicios.html">Ejercicios</a>
+        <a href="consejos.html" aria-current="page">Consejos</a>
+        <a href="proyecto.html">El proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-head dark">
+      <div class="wrap">
+        <p class="tag">Cortos, claros y sin vueltas</p>
+        <h1>Consejos</h1>
+        <p>Lo que necesitás saber para entrenar mejor, comer bien, descansar y no bajonearte.</p>
+      </div>
+    </section>
+
+    <section class="sec tipday" aria-label="Tip del día">
+      <div class="wrap">
+        <div id="tip-dia"></div>
+        <button class="btn" type="button" id="otro-tip">Otro tip</button>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Todos los tips</h2>
+        </div>
+        <div class="filters">
+          <div class="fgroup" id="filtros-tips" role="group" aria-label="Filtrar por tema">
+            <span class="flabel">Tema</span>
+            <button class="chip" type="button" data-valor="todos" aria-pressed="true">Todos</button>
+            <button class="chip" type="button" data-valor="entrenamiento" aria-pressed="false">Entrenamiento</button>
+            <button class="chip" type="button" data-valor="alimentacion" aria-pressed="false">Alimentación</button>
+            <button class="chip" type="button" data-valor="descanso" aria-pressed="false">Descanso</button>
+            <button class="chip" type="button" data-valor="mentalidad" aria-pressed="false">Mentalidad</button>
+          </div>
+        </div>
+        <div class="grid" id="lista-tips">
+          <noscript><p class="vacio">Necesitás JavaScript para ver los consejos.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot">
+        <a class="logo" href="index.html">Sport<b>/</b>Life</a>
+        <nav aria-label="Pie de página">
+          <a href="rutinas.html">Rutinas</a>
+          <a href="ejercicios.html">Ejercicios</a>
+          <a href="consejos.html">Consejos</a>
+          <a href="proyecto.html">El proyecto</a>
+        </nav>
+      </div>
+      <p class="legal">SportLife es un proyecto comunicacional (TACO, Etapa 1). El contenido es informativo. Si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
