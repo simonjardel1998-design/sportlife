@@ -23,13 +23,23 @@
         <a href="rutinas.html">Rutinas</a>
         <a href="ejercicios.html">Ejercicios</a>
         <a href="consejos.html">Consejos</a>
-        <a href="proyecto.html">El proyecto</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
       </nav>
     </div>
   </header>
 
   <main id="contenido">
-    <section class="hero dark">
+    <section class="hero dark" id="hero">
+      <div class="hero-media" aria-hidden="true">
+        <video id="hero-video" autoplay muted loop playsinline preload="metadata">
+          <source src="media/hero.mp4" type="video/mp4">
+          <source src="media/hero.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="hero-ctrl" id="hero-ctrl" hidden>
+        <button type="button" id="hv-sound" aria-pressed="false">Sonido: apagado</button>
+        <button type="button" id="hv-play" aria-pressed="false">Pausar video</button>
+      </div>
       <div class="wrap hero-grid">
         <div>
           <p class="tag">Deporte · Entrenamiento · Vida sana</p>
@@ -128,10 +138,10 @@
           <a href="rutinas.html">Rutinas</a>
           <a href="ejercicios.html">Ejercicios</a>
           <a href="consejos.html">Consejos</a>
-          <a href="proyecto.html">El proyecto</a>
+          <a href="quienes-somos.html">Quiénes somos</a>
         </nav>
       </div>
-      <p class="legal">SportLife - TACO Simón Jardel, Laureano Funes</p>
+      <p class="legal">SportLife es un proyecto comunicacional (TACO, Etapa 1). El contenido es informativo. Si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
     </div>
   </footer>
 

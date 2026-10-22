@@ -1,0 +1,17 @@
+CARPETA media  -  video del banner de inicio
+
+Poné acá tu video con alguno de estos nombres exactos:
+
+  hero.mp4    (recomendado, formato MP4 / H.264)
+  hero.webm   (opcional, un respaldo para algunos navegadores)
+
+Consejos para que cargue rápido en el celular:
+  - Que dure entre 8 y 20 segundos (se repite solo, en loop).
+  - Que pese menos de 8 MB.
+  - Mejor sin audio propio importante: arranca silenciado y el botón
+    "Sonido" lo activa. Si el video no tiene audio, el botón no hace nada.
+  - Horizontal, 1280x720 o 1920x1080.
+  - Usá un video tuyo o uno con licencia libre (por ejemplo de Pexels o Pixabay).
+
+Si no hay video en esta carpeta, el banner se ve negro y los botones
+de video no aparecen. Todo lo demás funciona igual.

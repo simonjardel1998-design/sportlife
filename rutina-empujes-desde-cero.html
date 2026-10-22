@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empujes desde cero — SportLife</title>
+  <meta name="description" content="Una rutina para trabajar pecho, hombros y tríceps usando solo tu peso. Combina flexiones, fondos y plancha en bloques cortos, con pausas para que llegues bien a cada ejercicio.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-rutina="empujes-desde-cero">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="SportLife, inicio">Sport<b>/</b>Life</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html" aria-current="page">Rutinas</a>
+        <a href="ejercicios.html">Ejercicios</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-head dark">
+      <div class="wrap">
+        <a class="rp-back" href="rutinas.html">← Todas las rutinas</a>
+        <p class="tag">Calistenia · Principiante</p>
+        <h1>Empujes desde cero</h1>
+        <p class="rp-meta">6 min · 40 s de trabajo / 20 s de pausa · 6 ejercicios</p>
+        <div class="btns">
+          <button class="btn btn-volt" type="button" data-start>Empezar con timer</button>
+          <a class="btn" href="#feedback">Ver opiniones</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap rp-grid">
+        <div>
+          <h2 class="rp-h">De qué se trata</h2>
+          <p class="rp-desc">Una rutina para trabajar pecho, hombros y tríceps usando solo tu peso. Combina flexiones, fondos y plancha en bloques cortos, con pausas para que llegues bien a cada ejercicio.</p>
+          <h2 class="rp-h">Ideal para vos si…</h2>
+          <ul class="rp-ideal">
+            <li>Estás empezando con calistenia y querés una base</li>
+            <li>No tenés equipo: alcanza con el piso y una silla</li>
+            <li>Querés ganar fuerza en el tren superior sin ir al gimnasio</li>
+          </ul>
+          <p class="ex-nota ex-error"><b>Tené en cuenta</b>Si una flexión te sale mal, pasá a la versión con rodillas o con apoyo en la pared.</p>
+        </div>
+        <aside class="rp-box" aria-label="Ejercicios de la rutina">
+          <h2>Los ejercicios</h2>
+          <ol>
+            <li>Flexiones (con rodillas si hace falta)</li>
+            <li>Fondos en silla</li>
+            <li>Pike push-up</li>
+            <li>Plancha</li>
+            <li>Superman en el piso</li>
+            <li>Flexiones con apoyo en pared</li>
+          </ol>
+          <p><a class="rp-link" href="ejercicios.html">Mirá cómo se hace cada uno →</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sec fb" id="feedback">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Qué opinan</h2>
+          <p>Puntuá la rutina de 1 a 5 mancuernas y dejá un comentario corto.</p>
+        </div>
+        <div class="fb-grid">
+          <div>
+            <div class="fb-resumen" id="fb-resumen"><noscript>Activá JavaScript para ver y dejar opiniones.</noscript></div>
+            <form class="fb-form" id="fb-form" novalidate>
+              <h3>Dejá tu opinión</h3>
+              <div class="fb-field">
+                <span class="fb-label" id="fb-rlabel">Tu puntaje</span>
+                <div class="fb-rating" id="fb-rating" role="radiogroup" aria-labelledby="fb-rlabel"></div>
+              </div>
+              <div class="fb-field">
+                <label class="fb-label" for="fb-nombre">Tu nombre (opcional)</label>
+                <input id="fb-nombre" type="text" maxlength="20" autocomplete="given-name" placeholder="Ej: Cande">
+              </div>
+              <div class="fb-field">
+                <label class="fb-label" for="fb-texto">Comentario corto</label>
+                <textarea id="fb-texto" maxlength="140" rows="3" placeholder="¿Qué te pareció? ¿Cómo te fue?"></textarea>
+                <span class="fb-cont" id="fb-cont">0 / 140</span>
+              </div>
+              <button class="btn btn-volt" type="submit">Enviar opinión</button>
+              <p class="msg" id="fb-msg" role="status"></p>
+            </form>
+          </div>
+          <div>
+            <ul class="fb-lista" id="fb-lista"></ul>
+            <p class="fb-nota">Los comentarios con nombre son de ejemplo, hechos para el prototipo del proyecto. Los que escribas acá se guardan solo en tu navegador.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head"><h2>Otras rutinas</h2></div>
+        <div class="rp-otras">
+          <a class="rp-otra" href="rutina-barra-y-espalda.html" data-cat="calistenia"><span class="rp-otra-cat">Calistenia · Intermedio</span><strong>Barra y espalda</strong><span>6 min →</span></a>
+          <a class="rp-otra" href="rutina-piernas-sin-equipo.html" data-cat="calistenia"><span class="rp-otra-cat">Calistenia · Principiante</span><strong>Piernas sin equipo</strong><span>5 min →</span></a>
+          <a class="rp-otra" href="rutina-circuito-mancuernas.html" data-cat="gimnasio"><span class="rp-otra-cat">Gimnasio · Principiante</span><strong>Circuito de mancuernas</strong><span>6 min →</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot">
+        <a class="logo" href="index.html">Sport<b>/</b>Life</a>
+        <nav aria-label="Pie de página">
+          <a href="rutinas.html">Rutinas</a>
+          <a href="ejercicios.html">Ejercicios</a>
+          <a href="consejos.html">Consejos</a>
+          <a href="quienes-somos.html">Quiénes somos</a>
+        </nav>
+      </div>
+      <p class="legal">SportLife es un proyecto comunicacional (TACO, Etapa 1) hecho por estudiantes. El contenido es informativo. Si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
