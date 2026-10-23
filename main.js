@@ -225,9 +225,23 @@
       bSound.textContent = hv.muted ? 'Sonido: apagado' : 'Sonido: encendido';
       bSound.setAttribute('aria-pressed', String(!hv.muted));
     });
+    var pausaUsuario = false, pausaAuto = false;
     bPlay.addEventListener('click', function () {
-      if (hv.paused) hv.play(); else hv.pause();
+      if (hv.paused) { pausaUsuario = false; hv.play(); }
+      else { pausaUsuario = true; hv.pause(); }
     });
+    /* Ahorra batería y datos: el video se frena solo cuando no se ve en pantalla. */
+    if ('IntersectionObserver' in window && !reduce) {
+      new IntersectionObserver(function (es) {
+        if (es[0].isIntersecting) {
+          if (pausaAuto && !pausaUsuario) hv.play();
+          pausaAuto = false;
+        } else if (!hv.paused) {
+          pausaAuto = true;
+          hv.pause();
+        }
+      }, { threshold: 0.15 }).observe($('#hero'));
+    }
     pintarPlay();
   }
 
