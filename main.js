@@ -460,6 +460,28 @@
     pintarFeedback();
   }
 
+  /* ---------- Consejos: audio y reel (con respaldo si falta el archivo) ---------- */
+  var aud = $('#audio-coach'), reel = $('#reel-video');
+  if (aud) {
+    var sinAudio = function () { aud.hidden = true; $('#audio-vacio').hidden = false; };
+    var ultA = $$('source', aud).pop();
+    if (ultA) ultA.addEventListener('error', sinAudio);
+    aud.addEventListener('error', sinAudio);
+    setTimeout(function () { if (aud.networkState === 3) sinAudio(); }, 1500);
+  }
+  if (reel) {
+    var sinReel = function () { reel.hidden = true; $('#reel-vacio').hidden = false; };
+    var ultR = $$('source', reel).pop();
+    if (ultR) ultR.addEventListener('error', sinReel);
+    reel.addEventListener('error', sinReel);
+    setTimeout(function () { if (reel.networkState === 3) sinReel(); }, 1500);
+  }
+  if (aud && reel) {
+    /* Que no suenen el audio y el reel a la vez */
+    aud.addEventListener('play', function () { reel.pause(); });
+    reel.addEventListener('play', function () { aud.pause(); });
+  }
+
   /* ---------- Formulario de aviso (solo validación en el navegador) ---------- */
   var form = $('#form-aviso');
   if (form) {
