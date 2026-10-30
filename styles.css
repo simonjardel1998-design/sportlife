@@ -362,3 +362,4 @@ h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;lin
 .reel-info h3{font-size:30px;margin-bottom:8px}
 .reel-info a{font-weight:700}
 @media(max-width:900px){.media-grid{grid-template-columns:1fr}.reel-card{max-width:380px;margin:0 auto;width:100%}}
+.foot nav a[target="_blank"]{color:var(--volt)}
