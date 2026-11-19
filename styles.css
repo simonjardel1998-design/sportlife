@@ -31,7 +31,7 @@ h1,h2,h3{font-family:var(--display);font-weight:400;text-transform:uppercase;lin
 .nav a{text-decoration:none;font-weight:700;text-transform:uppercase;font-size:14px;letter-spacing:.1em;padding:6px 0;border-bottom:3px solid transparent}
 .nav a:hover,.nav a[aria-current="page"]{border-color:var(--volt)}
 .menu-btn{display:none;background:none;border:2px solid var(--paper);color:var(--paper);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.1em;padding:8px 12px;cursor:pointer}
-@media(max-width:760px){
+@media(max-width:900px){
   .menu-btn{display:block}
   .nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--ink);flex-direction:column;gap:0;border-bottom:3px solid var(--volt)}
   .nav.open{display:flex}

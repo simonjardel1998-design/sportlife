@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda — SportLife</title>
+  <meta name="description" content="Creatina, proteína, accesorios y equipo para entrenar. Tienda de demostración del proyecto SportLife.">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="SportLife, inicio">Sport<b>/</b>Life</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="ejercicios.html">Ejercicios</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="tienda.html" aria-current="page">Tienda</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-head dark">
+      <div class="wrap">
+        <p class="tag">Línea SportLife</p>
+        <h1>Tienda</h1>
+        <p>Suplementos, accesorios y equipo para entrenar. Elegí lo que necesitás y armá tu carrito.</p>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <p class="sh-demo">Esta tienda es una demostración del proyecto: los productos, las ilustraciones y los precios son de ejemplo y no se cobra ni se envía nada.</p>
+
+        <div class="filters">
+          <div class="fgroup" id="filtros-tienda" role="group" aria-label="Filtrar por categoría">
+            <span class="flabel">Categoría</span>
+            <button class="chip" type="button" data-valor="todos" aria-pressed="true">Todos</button>
+            <button class="chip" type="button" data-valor="suplementos" aria-pressed="false">Suplementos</button>
+            <button class="chip" type="button" data-valor="accesorios" aria-pressed="false">Accesorios</button>
+            <button class="chip" type="button" data-valor="equipo" aria-pressed="false">Equipo</button>
+            <button class="chip" type="button" data-valor="ropa" aria-pressed="false">Ropa</button>
+          </div>
+        </div>
+
+        <div class="sh-tools">
+          <p class="count" id="prod-conteo" role="status" aria-live="polite" style="margin:0"></p>
+          <label class="sh-sort">Ordenar
+            <select id="orden">
+              <option value="destacados">Destacados</option>
+              <option value="menor">Precio: menor a mayor</option>
+              <option value="mayor">Precio: mayor a menor</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="pr-grid" id="lista-productos">
+          <noscript><p class="vacio">Necesitás JavaScript para ver los productos.</p></noscript>
+        </div>
+
+        <aside class="sh-aviso">
+          <h2>Antes de comprar suplementos</h2>
+          <ul>
+            <li>No son indispensables: con una alimentación variada, buen descanso y constancia se puede entrenar muy bien.</li>
+            <li>Si sos menor de 18, hablalo primero con un adulto y con tu médico.</li>
+            <li>Consultá con un médico o nutricionista antes de empezar, sobre todo si tenés alguna condición de salud.</li>
+            <li>Leé siempre la etiqueta y no superes lo que indica el envase.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <button class="cart-fab" type="button" id="btn-carrito" aria-haspopup="dialog">Carrito <span id="cart-cant">0</span></button>
+  <p class="vh" id="cart-vivo" role="status" aria-live="polite"></p>
+
+  <dialog class="carrito" id="carrito" aria-labelledby="cart-titulo">
+    <div class="cart-top">
+      <h2 id="cart-titulo">Tu carrito</h2>
+      <button type="button" class="cart-x" data-a="cerrar">Cerrar</button>
+    </div>
+    <div class="cart-body"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot">
+        <a class="logo" href="index.html">Sport<b>/</b>Life</a>
+        <nav aria-label="Pie de página">
+          <a href="rutinas.html">Rutinas</a>
+          <a href="ejercicios.html">Ejercicios</a>
+          <a href="consejos.html">Consejos</a>
+          <a href="tienda.html">Tienda</a>
+          <a href="quienes-somos.html">Quiénes somos</a>
+          <a href="https://www.instagram.com/sportlife_mdz/" target="_blank" rel="noopener noreferrer">Instagram @sportlife_mdz</a>
+        </nav>
+      </div>
+      <p class="legal">SportLife es un proyecto comunicacional (TACO, Etapa 1) hecho por estudiantes. El contenido es informativo. Si tenés una lesión o una condición médica, consultá con un profesional antes de entrenar.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="tienda.js"></script>
+</body>
+</html>
